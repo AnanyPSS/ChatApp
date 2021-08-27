@@ -12,6 +12,12 @@ CometChat.init(appID, appSetting).then(
   () => {
     console.log("Initialization completed successfully");
     // You can now call login function.
+    ReactDOM.render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>,
+      document.getElementById('root')
+    );
   },
   error => {
     console.log("Initialization failed with error:", error);
@@ -19,14 +25,6 @@ CometChat.init(appID, appSetting).then(
   }
 );
 
-
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

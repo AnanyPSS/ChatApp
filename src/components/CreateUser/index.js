@@ -37,20 +37,25 @@ class CreateUser extends Component {
   render() {
     return (
       <React.Fragment>
-        <div>
-          <input ref={this.myRefName} type="text" placeholder="Enter your name here" />
+      <div className="full-body">
+        <div className="container">
+          <h3 className="title">Register</h3>
+          <div className="input-group">
+            <input ref={this.myRefName} type="text" placeholder="Enter your name here" />
+          </div>
+          <div className="input-group">
+            <input ref={this.myRefUID} type="text" placeholder="Enter your UID here" />
+            <p>*** UID can be alphanumeric with underscore and hyphen. Spaces, punctuation and other special characters are not allowed.</p>
+          </div>
+          <div className="register-button">
+            <button type="button" onClick={() => this.newUser()}>Create User</button>
+          </div>
+          <div>
+            <Link to="/">
+              <h3 className="button">Home</h3>
+            </Link>
+          </div>
         </div>
-        <div>
-          <input ref={this.myRefUID} type="text" placeholder="Enter your UID here" />
-          <p>*** UID can be alphanumeric with underscore and hyphen. Spaces, punctuation and other special characters are not allowed.</p>
-        </div>
-        <div>
-          <button type="button" onClick={() => this.newUser()}>Create User</button>
-        </div>
-        <div>
-          <Link to="/">
-            <h3>Home</h3>
-          </Link>
         </div>
       </React.Fragment>
     )
