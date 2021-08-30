@@ -7,7 +7,7 @@ export const theme = {
         primary: "#141414",
         secondary: "#cccccc",
         darkSecondary: "#eaeaea",
-        grey: "rgba(20,20,20,0.04)",
+        grey: "#fff",
         helpText: "rgba(20, 20, 20, 0.6)",
         blue: "#39f",
         white: "#fff",

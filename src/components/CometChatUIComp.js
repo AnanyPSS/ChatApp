@@ -8,7 +8,7 @@ export default class CometChatUIComp extends React.Component {
     console.log(this.props.show)
     return (
     <div>
-      <div style={{width: '1400px', height:'800px' }}>
+      <div style={{width: '100%', height:'100%' }}>
        {this.props.show ? <CometChatUI /> : <Redirect to="/login" />}
       </div>
     </div>

@@ -6,7 +6,8 @@ export const unifiedStyle = (props) => {
         width: "100%",
         boxSizing: "border-box",
         fontFamily: `${props.theme.fontFamily}`,
-        border: `1px solid ${props.theme.borderColor.primary}`,
+        // border: `1px solid ${props.theme.borderColor.primary}`,
+        border: `1px solid white`,
         position: "relative",
         "*": {
             boxSizing: "border-box",
@@ -39,7 +40,7 @@ export const unifiedSidebarStyle = (state, props) => {
 
     return {
 
-        width: "280px",
+        width: "480px",
         borderRight: `1px solid ${props.theme.borderColor.primary}`,
         height: "100%",
         position: "relative",

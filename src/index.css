@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #4e5255;
+  background-color: #9ca0a1;
 }
 
 code {
@@ -59,7 +59,7 @@ code {
 .input-group input {
   font-size: 1.5em;
   padding: 0.1em 0.25em;
-  background-color: hsla(201, 100%, 91%, 0.3);
+  background-color: hsla(285, 5%, 68%, 0.3);
   border: 1px solid hsl(201, 100%, 6%);
   outline: none;
   border-radius: 5px;
