@@ -5,7 +5,7 @@ export const conversationActionStyle = context => {
 		padding: "8px",
 		margin: "0",
 		width: "72px",
-		backgroundColor: `${context.theme.backgroundColor.primary}`,
+		backgroundColor: "#42464a",
 		borderRadius: "4px",
 		alignItems: "center",
 		justifyContent: "flex-end",

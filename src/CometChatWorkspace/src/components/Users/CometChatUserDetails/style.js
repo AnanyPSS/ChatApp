@@ -8,6 +8,7 @@ export const userDetailStyle = context => {
 		height: "100%",
 		position: "relative",
 		boxSizing: "border-box",
+		color: "white",
 		fontFamily: `${context.theme.fontFamily}`,
 		"*": {
 			boxSizing: "border-box",
@@ -22,9 +23,9 @@ export const headerStyle = context => {
 		position: "relative",
 		borderBottom: `1px solid ${context.theme.borderColor.primary}`,
 		display: "flex",
-		justifyContent: "flex-start",
+		justifyContent: "center",
 		alignItems: "center",
-		height: "69px",
+		height: "80px",
 	};
 };
 
@@ -49,7 +50,8 @@ export const headerTitleStyle = () => {
 	return {
 		margin: "0",
 		fontWeight: "700",
-		fontSize: "20px",
+		fontSize: "40px",
+
 	};
 };
 
@@ -61,6 +63,7 @@ export const sectionStyle = () => {
 		flexDirection: "column",
 		justifyContent: "space-between",
 		alignItems: "flex-start",
+		backgroundColor: "#62676A",
 	};
 };
 
@@ -100,6 +103,8 @@ export const mediaSectionStyle = () => {
 		flexDirection: "column",
 		justifyContent: "space-between",
 		alignItems: "flex-start",
+		color: "white",
+		backgroundColor: "#62676A",
 	};
 };
 
@@ -133,11 +138,11 @@ export const contentItemStyle = () => {
 
 export const itemLinkStyle = context => {
 	return {
-		fontSize: "15px",
-		lineHeight: "20px",
+		fontSize: "18px",
+		lineHeight: "25px",
 		fontWeight: "600",
 		display: "inline-block",
-		color: `${context.theme.color.red}`,
+		color: `${context.theme.color.blue}`,
 	};
 };
 
@@ -151,18 +156,18 @@ export const userInfoSectionStyle = () => {
 
 export const userThumbnailStyle = () => {
 	return {
-		width: "35px",
-		height: "35px",
+		width: "45px",
+		height: "45px",
 		display: "inline-block",
 		flexShrink: "0",
-		margin: "0 16px 0 0",
+		margin: "0 26px 0 10px",
 	};
 };
 
 export const userNameStyle = () => {
 	return {
 		margin: "0",
-		fontSize: "15px",
+		fontSize: "35px",
 		fontWeight: "600",
 		width: "100%",
 		overflow: "hidden",
@@ -181,7 +186,7 @@ export const userPresenceStyle = (context, state) => {
 	
 	let status = state.status ? state.status.toLowerCase() : "";
 	let compareTo = Translator.translate((CometChat.USER_STATUS.ONLINE).toUpperCase(), context.language).toLowerCase();
-	status = status === compareTo ? { color: `${context.theme.color.blue}` } : { color: `${context.theme.color.helpText}` };
+	status = status === compareTo ? { color: `${context.theme.color.blue}` } : { color: `${context.theme.color.white}` };
 
 	return {
 		width: "calc(100% - 50px)",

@@ -1,7 +1,8 @@
 export const listItem = (props) => {
 
     const selectedState = (props.selectedConversation && props.selectedConversation.conversationId === props.conversation.conversationId) ? {
-        backgroundColor: `${props.theme.backgroundColor.primary}`
+        backgroundColor: `#62676A`,
+        borderRadius: "8px",
     } : {};
 
     return {
@@ -15,7 +16,8 @@ export const listItem = (props) => {
         position: "relative",
         ...selectedState,
         '&:hover': {
-            backgroundColor: `${props.theme.backgroundColor.primary}`
+            backgroundColor: "#42464a",
+            borderRadius: "8px",
         },
     }
 }
@@ -24,8 +26,8 @@ export const itemThumbnailStyle = () => {
 
     return {
         display: "inline-block",
-        width: "36px",
-        height: "36px",
+        width: "45px",
+        height: "45px",
         flexShrink: "0",
     }
 }
@@ -55,7 +57,8 @@ export const itemRowStyle = () => {
 export const itemNameStyle = () => {
 
     return {
-        fontSize: "15px",
+        fontSize: "16px",
+        color: "white",
         fontWeight: "600",
         display: "block",
         width: "calc(100% - 70px)",
@@ -68,14 +71,14 @@ export const itemNameStyle = () => {
 export const itemLastMsgStyle = (props) => {
 
     return {
-        margin: "0",
+        marginTop: "8px",
         fontSize: "13px",
         width: "calc(100% - 50px)",
         overflow: "hidden",
         textOverflow: "ellipsis",
         whiteSpace: "nowrap",
         lineHeight: "20px",
-        color: `${props.theme.color.helpText}`,
+        color: "wheat",
     }
 }
 
@@ -85,6 +88,7 @@ export const itemLastMsgTimeStyle = (props) => {
         fontSize: "11px",
         width: "70px",
         textAlign: "right",
-        color: `${props.theme.color.helpText}`,
+        color: "wheat",
+        marginTop: "10px",
     }
 }

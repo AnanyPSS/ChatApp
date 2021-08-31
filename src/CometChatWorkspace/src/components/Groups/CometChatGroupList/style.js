@@ -38,7 +38,7 @@ export const groupHeaderStyle = theme => {
 		justifyContent: "space-between",
 		alignItems: "center",
 		borderBottom: `1px solid ${theme.borderColor.primary}`,
-		height: "70px",
+		height: "80px",
 	};
 };
 
@@ -70,9 +70,10 @@ export const groupHeaderTitleStyle = (props) => {
         margin: "0",
         fontWeight: "700",
         display: "inline-block",
+        color: "white",
         width: "100%",
-        textAlign: "left",
-        fontSize: "20px",
+        textAlign: "center",
+        fontSize: "40px",
         ...alignment,
         "&[dir=rtl]": {
             textAlign: "right",
@@ -101,8 +102,9 @@ export const groupSearchStyle = () => {
         margin: "16px",
         position: "relative",
         borderRadius: "8px",
+        color: "white",
 		boxShadow: "rgba(20, 20, 20, 0.04) 0 0 0 1px inset",
-        backgroundColor: "rgba(20, 20, 20, 0.04)",
+        backgroundColor: "#62676A",
         height: "35px",
         display: "flex",
         justifyContent: "center",
@@ -118,7 +120,7 @@ export const groupSearchButtonStyle = (img, context) => {
 		padding: "8px 0 8px 8px",
 		cursor: "default",
 		mask: `url(${img}) 10px center no-repeat`,
-		backgroundColor: `${context.theme.secondaryTextColor}!important`,
+		backgroundColor: `#ffffff !important`,
 	};
 };
 
@@ -132,6 +134,7 @@ export const groupSearchInputStyle = () => {
         outline: "none",
         border: "none",
         backgroundColor: "transparent",
+        color: "white",
     };
 }
 
@@ -167,7 +170,8 @@ export const groupListStyle = () => {
     return {
         height: "calc(100% - 125px)",
         overflowY: "auto",
-        margin: "0",
+        margin: "20px",
+        marginTop: "10px",
         padding: "0"
     }
 }

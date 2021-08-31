@@ -1,7 +1,8 @@
 export const listItem = (props, context) => {
 
     const selectedState = (props.selectedUser && props.selectedUser.uid === props.user.uid) ? {
-        backgroundColor: `${context.theme.backgroundColor.primary}`
+        backgroundColor: `#62676A`,
+        borderRadius: "8px",
     } : {};
 
     return {
@@ -9,12 +10,15 @@ export const listItem = (props, context) => {
         flexDirection: "row",
         justifyContent: "left",
         alignItems: "center",
+        color: "white",
         cursor: "pointer",
         width: "100%",
+        marginRight: "10px",
         padding: "8px 16px",
         ...selectedState,
         '&:hover': {
-            backgroundColor: `${context.theme.backgroundColor.primary}`
+            backgroundColor: `#42464a`,
+            borderRadius: "8px",
         }
     }
 }
@@ -45,7 +49,7 @@ export const itemDetailStyle = () => {
 export const itemNameStyle = () => { 
     
     return {
-        fontSize: "15px",
+        fontSize: "16px",
         fontWeight: "600",
         overflow: "hidden",
         textOverflow: "ellipsis",
@@ -58,7 +62,7 @@ export const itemNameStyle = () => {
 export const itemDescStyle = context => {
 	return {
 		marginTop: "10px",
-		borderBottom: `1px solid ${context.theme.borderColor.primary}`,
+		borderBottom: `2px solid white`,
 	};
 };
 

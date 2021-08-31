@@ -1,7 +1,8 @@
 export const contactWrapperStyle = (props, theme) => {
 
     const borderStyle = (props._parent === "") ? {
-        border: `1px solid ${theme.borderColor.primary}`
+        backgroundColor: `#62676A`,
+        borderRadius: "8px",
     } : {};
 
 
@@ -18,12 +19,12 @@ export const contactWrapperStyle = (props, theme) => {
                 height: "4px",
             },
             "::-webkit-scrollbar-track": {
-                background: "#ffffff00"
+                background: "#373838"
             },
             "::-webkit-scrollbar-thumb": {
-                background: "#ccc",
+                background: "#42464a",
                 "&:hover": {
-                    background: "#aaa"
+                    background: "#62676A"
                 }
             }
         }
@@ -38,7 +39,8 @@ export const contactHeaderStyle = theme => {
 		display: "flex",
 		alignItems: "center",
 		borderBottom: `1px solid ${theme.borderColor.primary}`,
-		height: "70px",
+		height: "80px",
+        color: "white",
 	};
 };
 
@@ -63,7 +65,7 @@ export const contactHeaderTitleStyle = (props) => {
 
     const alignment = (props.hasOwnProperty("enableCloseMenu") && props.enableCloseMenu.length > 0) ? {
         width: "33%",
-        textAlign: "center"
+        textAlign: "center",
     } : {};
 
     return {
@@ -71,8 +73,8 @@ export const contactHeaderTitleStyle = (props) => {
         fontWeight: "700",
         display: "inline-block",
         width: "100%",
-        textAlign: "left",
-        fontSize: "20px",
+        textAlign: "center",
+        fontSize: "40px",
         ...alignment,
         "&[dir=rtl]": {
             textAlign: "right",
@@ -86,12 +88,13 @@ export const contactSearchStyle = () => {
         margin: "16px",
         position: "relative",
         borderRadius: "8px",
+        color: "white",
 		boxShadow: "rgba(20, 20, 20, 0.04) 0 0 0 1px inset",
-        backgroundColor: "rgba(20, 20, 20, 0.04)",
+        backgroundColor: "#62676A",
         height: "35px",
         display: "flex",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
     }
 }
 
@@ -103,7 +106,7 @@ export const contactSearchButtonStyle = (img, theme) => {
 		padding: "8px 0 8px 8px",
 		cursor: "default",
 		mask: `url(${img}) 10px center no-repeat`,
-		backgroundColor: `${theme.secondaryTextColor}!important`,
+		backgroundColor: `#ffffff !important`,
 	};
 };
 
@@ -117,6 +120,7 @@ export const contactSearchInputStyle = () => {
         border: "none",
         height: "100%",
         backgroundColor: "transparent",
+        color: "white",
     }
 }
 
@@ -141,7 +145,7 @@ export const contactMsgTxtStyle = theme => {
 		color: `${theme.color.secondary}`,
 		fontSize: "20px!important",
 		fontWeight: "600",
-		lineHeight: "30px",
+		lineHeight: "300px",
 		wordWrap: "break-word",
 		padding: "0 16px",
 	};
@@ -152,7 +156,8 @@ export const contactListStyle = () => {
     return {
         height: "calc(100% - 125px)",
         overflowY: "auto",
-        margin: "0",
+        margin: "20px",
+        marginTop: "10px",
         padding: "0"
     }
 }
@@ -160,9 +165,12 @@ export const contactListStyle = () => {
 export const contactAlphabetStyle = () => {
     
     return {
-        padding: "0 16px",
+        padding: "15px 0 15px 15",
         margin: "5px 0",
+        marginLeft: "10px",
         width: "100%",
-        fontSize: "14px"
+        fontSize: "25px",
+        fontWeight: "bold",
+        color: "wheat",
     }
 }

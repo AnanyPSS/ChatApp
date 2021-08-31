@@ -19,9 +19,9 @@ export const headerStyle = (context) => {
         position: "relative",
         borderBottom: `1px solid ${context.theme.borderColor.primary}`,
         display: "flex",
-        justifyContent: "flex-start",
+        justifyContent: "center",
         alignItems: "center",
-        height: "69px",
+        height: "80px",
     }
 }
 
@@ -47,7 +47,8 @@ export const headerTitleStyle = () => {
     return {
         margin: "0",
         fontWeight: "700",
-        fontSize: "20px"
+        fontSize: "40px",
+        color: "white",
     }
 }
 
@@ -60,7 +61,9 @@ export const detailPaneStyle = () => {
         flexDirection: "column",
         justifyContent: "space-between",
         alignItems: "flex-start",
-        height: "calc(100% - 70px)"
+        height: "calc(100% - 70px)",
+        backgroundColor: "#62676A",
+        color: "white",
     }
 }
 
@@ -75,10 +78,11 @@ export const sectionHeaderStyle = (context) => {
 
     return {
         margin: "0",
+        marginBottom: "20px",
         width: "100%",
-        fontSize: "12px",
+        fontSize: "14px",
         lineHeight: "20px",
-        color: `${context.theme.color.secondary}`,
+        color: "wheat",
         textTransform: "uppercase",
     }
 }
@@ -122,6 +126,7 @@ export const itemLinkStyle = (context, deleteLink) => {
         lineHeight: "20px",
         display: "inline-block",
         cursor: "pointer",
+        color: `${context.theme.color.blue}`,
         fontWeight: "600",
         ...deleteCss
     }

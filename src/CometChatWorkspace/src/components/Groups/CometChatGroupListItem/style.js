@@ -1,7 +1,8 @@
 export const listItem = (props, context) => {
 
     const selectedState = (props.selectedGroup && props.selectedGroup.guid === props.group.guid) ? {
-        backgroundColor: `${context.theme.backgroundColor.primary}`
+        backgroundColor: `#62676A`,
+        borderRadius: "8px",
     } : {};
 
     return {
@@ -14,7 +15,8 @@ export const listItem = (props, context) => {
         padding: "8px 16px",
         ...selectedState,
         '&:hover': {
-            backgroundColor: `${context.theme.backgroundColor.primary}`
+            backgroundColor: `#42464a`,
+            borderRadius: "8px",
         }
     }
 }
@@ -43,8 +45,8 @@ export const itemIconStyle = (img, context) => {
 
     return {
         display: "inline-block",
-        width: "24px",
-        height: "24px",
+        width: "36px",
+        height: "36px",
         mask: `url(${img}) center center no-repeat`,
         backgroundColor: `${context.theme.secondaryTextColor}`,
     };
@@ -76,22 +78,23 @@ export const itemDetailStyle = () => {
 export const itemNameWrapperStyle = () => { 
 
     return {
-        fontSize: "15px",
+        fontSize: "16px",
+        color: "white",
         fontWeight: "600",
         display: "flex",
         alignItems: "center",
         width: "100%",
-        margin: "0",
+        marginBottom: "8px",
     }
 }
 
 export const itemDescStyle = (context) => { 
 
     return {
-        borderBottom: `1px solid ${context.theme.borderColor.primary}`,
+        borderBottom: `2px solid ${context.theme.borderColor.primary}`,
         padding: "0 0 5px 0",
         fontSize: "12px",
-        color: `${context.theme.color.helpText}`,
+        color: "wheat",
         "&:hover": {
             borderBottom: `1px solid ${context.theme.borderColor.primary}`,
         }

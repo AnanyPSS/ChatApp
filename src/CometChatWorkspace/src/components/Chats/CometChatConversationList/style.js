@@ -36,7 +36,7 @@ export const chatsHeaderStyle = theme => {
 		display: "flex",
 		alignItems: "center",
 		borderBottom: `1px solid ${theme.borderColor.primary}`,
-		height: "69px",
+		height: "80px",
 	};
 };
 
@@ -68,8 +68,9 @@ export const chatsHeaderTitleStyle = (props) => {
         margin: "0",
         display: "inline-block",
         width: "100%",
-        textAlign: "left",
-        fontSize: "20px",
+        textAlign: "center",
+        fontSize: "40px",
+        color: "white",
         ...alignment,
         "&[dir=rtl]": {
             textAlign: "right",
@@ -96,7 +97,7 @@ export const chatsMsgTxtStyle = theme => {
 		margin: "0",
 		minHeight: "36px",
 		color: `${theme.color.secondary}`,
-		fontSize: "20px!important",
+		fontSize: "25px!important",
 		fontWeight: "600",
 		lineHeight: "30px",
 		wordWrap: "break-word",
@@ -110,7 +111,7 @@ export const chatsListStyle = () => {
         height: "calc(100% - 75px)",
         width: "100%",
         overflowY: "auto",
-        margin: "0",
+        margin: "10px 5px 10px 0",
         padding: "0",
     }
 }

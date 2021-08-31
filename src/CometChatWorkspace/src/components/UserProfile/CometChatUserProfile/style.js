@@ -18,9 +18,10 @@ export const headerStyle = (props) => {
         padding: "16px",
         position: "relative",
         borderBottom: `1px solid ${props.theme.borderColor.primary}`,
-        height: "70px",
+        height: "80px",
         display: "flex",
         alignItems: "center",
+        justifyContent: "center",
     }
 }
 
@@ -29,7 +30,8 @@ export const headerTitleStyle = () => {
     return {
         margin: "0",
         fontWeight: "700",
-        fontSize: "22px"
+        fontSize: "40px",
+        color: "white",
     }
 }
 
@@ -39,7 +41,7 @@ export const detailStyle = () => {
         padding: "16px",
         display: "flex",
         flexDirection: "row",
-        justifyContent: "left",
+        justifyContent: "center",
         alignItems: "center",
     }
 }
@@ -48,9 +50,11 @@ export const thumbnailStyle = () => {
 
     return {
         display: "inline-block",
-        width: "36px",
-        height: "36px",
+        width: "46px",
+        height: "46px",
         flexShrink: "0",
+        marginLeft: "20px",
+        marginTop: "25px",
     }
 }
 
@@ -70,14 +74,15 @@ export const userDetailStyle = () => {
 export const userNameStyle = () => {
 
     return {
-        margin: "0",
-        fontSize: "15px",
+        margin: "20px 0  5px",
+        fontSize: "25px",
         fontWeight: "600",
         display: "block",
         maxWidth: "100%",
         overflow: "hidden",
         textOverflow: "ellipsis",
         whiteSpace: "nowrap",
+        color: "white",
     }
 }
 
@@ -86,7 +91,7 @@ export const userStatusStyle = (props) => {
     return {
         fontSize: "13px",
         margin: "0",
-        color: `${props.theme.color.blue}`,
+        color: `${props.theme.color.red}`,
     }
 }
 
@@ -96,10 +101,12 @@ export const optionsStyle = () => {
         height: "calc(100% - 145px)",
         overflowY: "auto",
         padding: "0 16px",
+        margin: "25px 0 0 20px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "left",
         alignItems: "flex-start",
+        color: "white",
     }
 }
 
@@ -109,7 +116,7 @@ export const optionTitleStyle = (props) => {
         margin: "5px 0",
         width: "100%",
         fontSize: "12px",
-        color: `${props.theme.color.helpText}`,
+        color: "wheat",
         textTransform: "uppercase",
     }
 }

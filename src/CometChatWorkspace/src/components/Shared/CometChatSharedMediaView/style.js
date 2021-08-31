@@ -52,7 +52,7 @@ export const mediaBtnStyle = () => {
 export const buttonStyle = (state, type) => {
 
     const activeBtn = (state.messagetype === type) ? {
-        backgroundColor : "#fff",
+        backgroundColor : "#373838",
         boxShadow: "rgba(20, 20, 20, 0.04) 0 3px 1px, rgba(20, 20, 20, 0.12) 0 3px 8px",
         borderRadius: "7px",
         "&::before": {

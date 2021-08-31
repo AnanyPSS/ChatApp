@@ -5,7 +5,7 @@ export const chatHeaderStyle = context => {
 	return {
 		padding: "16px",
 		width: "100%",
-		backgroundColor: `${context.theme.backgroundColor.white}`,
+		backgroundColor: "#373838",
 		zIndex: "1",
 		borderBottom: `1px solid ${context.theme.borderColor.primary}`,
 		display: "flex",
@@ -49,8 +49,8 @@ export const chatThumbnailStyle = () => {
 
     return {
         display: "inline-block",
-        width: "36px",
-        height: "36px",
+        width: "46px",
+        height: "46px",
         flexShrink: "0",
         margin: "0 16px",
     }
@@ -76,12 +76,14 @@ export const chatNameStyle = () => {
 
     return {
         margin: "0",
-        fontSize: "15px",
+        fontSize: "18px",
         fontWeight: "600",
+        color: "white",
         width: "100%",
         overflow: "hidden",
         textOverflow: "ellipsis",
         whiteSpace: "nowrap",
+        marginBottom: "4px",
     }
 }
 
@@ -91,20 +93,20 @@ export const chatStatusStyle = (state, context) => {
     if (context.type === CometChat.ACTION_TYPE.TYPE_USER) {
 
         status = {
-            color: `${context.theme.color.blue}`,
+            color: "wheat",
             textTransform: "capitalize",
         };
 
         if (state.presence === "offline") {
             status = {
-                color: `${context.theme.color.helpText}`,
+                color: "wheat",
                 textTransform: "capitalize",
             }
         } 
 
         if (state.typing) {
             status = {
-                color: `${context.theme.color.helpText}`,
+                color: "wheat",
                 textTransform: "none",
                 fontStyle: "italic",
             };
@@ -113,12 +115,12 @@ export const chatStatusStyle = (state, context) => {
     } else if (context.type === CometChat.ACTION_TYPE.TYPE_GROUP) {
 
         status = {
-            color: `${context.theme.color.helpText}`,
+            color: "wheat",
         }
 
         if (state.typing) {
             status = {
-                color: `${context.theme.color.helpText}`,
+                color: "wheat",
                 fontStyle: "italic",
             };
         }

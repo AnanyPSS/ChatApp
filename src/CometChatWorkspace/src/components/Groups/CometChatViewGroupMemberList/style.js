@@ -8,7 +8,7 @@ export const modalWrapperStyle = (context) => {
         width: "50%",
         height: "40%",
         overflow: "hidden",
-        backgroundColor: `${context.theme.backgroundColor.white}`,
+        backgroundColor: "#42464a",
         position: "fixed",
         left: "50%",
         top: "50%",
@@ -51,7 +51,7 @@ export const modalCloseStyle = (img, context) => {
 export const modalBodyStyle = () => {
 
     return {
-        padding: "24px",
+        padding: "34px",
         height: "100%",
         width: "100%"
     }
@@ -63,12 +63,13 @@ export const modalCaptionStyle = (dir) => {
         textAlign: "right",
         paddingRight: "32px",
     } : {
-        textAlign: "left",
+        textAlign: "center",
     };
 
     return {
-        fontSize: "20px",
-        marginBottom: "16px",
+        fontSize: "30px",
+        color: "white",
+        marginBottom: "10px",
         fontWeight: "bold",
         ...textAlignStyle,
         width: "100%",
@@ -105,8 +106,10 @@ export const listHeaderStyle = (context) => {
         flexDirection: "row",
         justifyContent: "flex-start",
         alignItems: "center",
+        fontSize: "16px",
+        color: "white",
         fontWeight: "bold",
-        padding: "8px",
+        padding: "12px",
         width: "100%",
         border: `1px solid ${context.theme.borderColor.primary}`,
     }
@@ -118,6 +121,8 @@ export const listStyle = () => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "flex-start",
+        fontSize: "14px",
+        color: "wheat",
         alignItems: "flex-start",
         width: "100%",
         height: "calc(100% - 33px)",
@@ -153,7 +158,7 @@ export const nameColumnStyle = (context, editAccess) => {
     };
 
     return {
-        ...widthProp
+        ...widthProp,
     }
 }
 
@@ -165,7 +170,7 @@ export const scopeColumnStyle = (context) => {
         width: "180px",
         marginRight: "8px",
         [mq[1]]: {
-            width: "140px"
+            width: "140px",
         },
         [mq[2]]: {
             width: "180px",
